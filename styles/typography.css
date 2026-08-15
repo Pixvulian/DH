@@ -1,0 +1,34 @@
+.ag-wdh {
+    --dnd5e-color-table-row-odd: var(--row-color);
+    --dnd5e-color-table-row-even: transparent;
+    --dnd5e-block-background: var(--narrative-bg);
+    --dnd5e-block-border-color: var(--narrative-border);
+
+    & table {
+        --table-background-color: transparent;
+        --dnd5e-color-hd-1: transparent;
+        --dnd5e-color-hd-2: transparent;
+        --dnd5e-color-table-border: transparent;
+
+        thead {
+            color: var(--color-text-dark-primary);
+            text-align: left;
+        }
+
+        button {
+            color: var(--color-text-dark-highlight);
+        }
+    }
+
+    & th {
+        padding: 0.375em;
+    }
+
+    & :is(h1, h2, h3):not(:is(caption, .notable, .quest, .advice, .narrative, .item) *) {
+        color: var(--header-color);
+    }
+
+    & img {
+        border: none;
+    }
+}

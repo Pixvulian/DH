@@ -1,0 +1,18 @@
+.ag-wdh {
+    & .notable {
+        --dnd5e-block-background: var(--notable-bg);
+    }
+
+    & .advice {
+        --dnd5e-block-background: var(--advice-bg);
+    }
+
+    & .ag-advice {
+        --dnd5e-block-background: var(--ag-advice-bg);
+        --dnd5e-block-border-color: var(--ag-main);
+    }
+
+    & .reference::before {
+        font-family: var(--font-awesome);
+    }
+}

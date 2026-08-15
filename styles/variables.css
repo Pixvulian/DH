@@ -1,0 +1,19 @@
+.ag-wdh {
+    --ag-main: #281328;
+    --ag-wdh-main: #0f5cbc;
+
+    --header-color: rgb(97, 0, 0);
+    --scrollable-padding: 0 0.5rem 1rem 1rem;
+    --page-border: url(../assets/ui/right-border.webp) 160 fill / 40px stretch;
+    --page-bg: url(../assets/ui/page-background.webp);
+
+    --row-color: #faf8f7;
+
+    --narrative-bg: #e6e7ec;
+    --narrative-border: #979aa4;
+
+    --notable-bg: #d8e3e3;
+
+    --advice-bg: var(--dnd5e-color-card);
+    --ag-advice-bg: var(--advice-bg);
+}

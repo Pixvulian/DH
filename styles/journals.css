@@ -1,0 +1,119 @@
+.ag-wdh.sheet .sidebar {
+    & a:hover { text-shadow: 0 0 8px var(--ag-wdh-main); }
+    & button {
+        background: var(--ag-wdh-main);
+        border: var(--ag-wdh-main);
+        color: #ffffff;
+    }
+    & button:hover, & button:focus { box-shadow: 0 0 5px var(--ag-wdh-main); }
+
+    & .pages-list {
+        --color-border-highlight: var(--ag-wdh-main);
+
+        & .directory .directory-item.context, & .directory .directory-item.active {
+            border-color: var(--ag-wdh-main);
+        }
+
+        & .directory-item.active:first-of-type,
+        & .directory-item.active + :not(.active),
+        & .directory-item:not(.active) + .active {
+            border-top: 1px solid var(--ag-wdh-main);
+        }
+
+        & .directory-item.active:last-of-type {
+            border-bottom: 1px solid var(--ag-wdh-main);
+        }
+
+        & .page-heading .page-number:hover, & .page-heading .page-title:hover {
+            text-shadow: var(--ag-wdh-main);
+        }
+    }
+}
+
+.ag-wdh.sheet .journal-entry-content {
+    background: var(--page-bg);
+    background-size: cover;
+    border-image: var(--page-border);
+
+    & .journal-header input.title {
+        background: none;
+        box-shadow: none;
+        color: var(--header-color);
+    }
+
+    & .scrollable {
+        padding: var(--scrollable-padding);
+        scrollbar-color: var(--ag-wdh-main) transparent;
+    }
+
+    a:is(.content-link, .inline-roll) > i,
+    a.roll-link-group .roll-link > i,
+    a.roll-link-group.roll-link > i,
+    :is(.roll-link-group, .reference-link) a > i {
+        color: var(--ag-wdh-main);
+    }
+
+    .roll-link > i.fa-dice-d20,
+    a.inline-roll > i.fa-dice-d20 {
+        background: url(../assets/ui/d20.svg) no-repeat center / contain
+    }
+
+    /* UTILITY */
+    & .hide-in-journal {
+        display: none;
+    }
+
+    & .round {
+        border-radius: 50%;
+    }
+
+    & .space-between {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        clear: both;
+    }
+
+    & .space-around {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        clear: both;
+    }
+
+    & .space-between.top, & .space-around.top {
+        align-items: start;
+    }
+
+    & .left {
+        float: left;
+        margin-right: 5px;
+    }
+
+    & .right {
+        float: right;
+        margin-left: 5px;
+    }
+
+    & .four {
+        width: 400px;
+    }
+
+    & .three {
+        width: 300px;
+    }
+
+    & .two {
+        width: 200px;
+    }
+
+    & .one {
+        width: 100px;
+    }
+
+    & .clear-both {
+        clear: both;
+    }
+}
