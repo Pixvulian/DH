@@ -1,0 +1,130 @@
+{
+  "id": "ag-wdh",
+  "title": "🏰 Вотердип: Драконий Куш",
+  "description": "<p>Приветствуем вас в Вотердипе – месте, которое также известно как Город великолепия! Известный исследователь, путешественник и сказитель Волотамп Геддарм попросил вас помочь ему в одном простеньком деле. Почему бы не согласиться? Но то, что ждёт вас впереди, вряд ли можно будет назвать спокойной прогулкой. Приготовьтесь раскрыть крупный заговор, выведите на чистую воду когорту влиятельных персон города, устройте мозговой штурм, пытаясь расшифровать все встречающиеся головоломки, и, конечно же, какое же приключение без сокровищ, на пути к которым придётся преодолеть множество различных опасностей и хитроумных злодеев!</p><p>Заходите к нам:</p><ul><li><a href=\"https://t.me/adventureguysrpg\">Telegram</a></li><li><a href=\"https://vk.com/adventure_guys\">ВКонтакте</a></li><li><a href=\"https://www.youtube.com/channel/UCMR9Sag4E8pi2UYc3estbaw\">Youtube</a></li><li><a href=\"https://discord.com/invite/xefpN9789E\">Discord</a></li></ul><h3>Зависимости</h3><p>Для использования данного приключения желательно установить зависимость - <a href=\"https://boosty.to/laaru/posts/30ef2f20-5198-464d-9dc7-fd111b846295\">модуль laaru-dnd5-hw</a> (доступен по подписке). Приключение будет работать и без него, но часть изображений заклинаний и различные подсказки могут отсутствовать. Данный модуль будет полезен не только для этого приключения, но и для любого другого, так как содержит все необходимые классы, заклинания, чудовищ и многое другое.</p>",
+  "version": "13.0.5",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "url": "https://boosty.to/omar0275/posts/4d951670-710a-4173-b6e5-263eddafae14?share=post_link",
+  "manifest": "https://fs.adventureguys.club/s/PdfnG5W32n29f5S/download",
+  "download": "https://fs.adventureguys.club/s/LcAFdH2sFT9GYGd/download",
+  "authors": [
+    {
+      "name": "Adventure Guys",
+      "url": "https://boosty.to/omar0275",
+      "discord": "https://discord.gg/xefpN9789E",
+      "flags": {}
+    }
+  ],
+  "languages": [
+    {
+      "lang": "ru",
+      "name": "Русский",
+      "path": "lang/ru.json"
+    }
+  ],
+  "esmodules": [
+    "scripts/ag-module.mjs"
+  ],
+  "styles": [
+    "styles/ag-module.css"
+  ],
+  "socket": true,
+  "flags": {
+    "tokenRingSubjectMappings": {
+      "modules/ag-wdh/assets/actors/tokens/": "modules/ag-wdh/assets/actors/subjects/"
+    }
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "5.0.4",
+          "verified": "5.0.4"
+        }
+      }
+    ],
+    "recommends": [
+      {
+        "id": "ag-dnd-hub",
+        "type": "module",
+        "manifest": "https://gitlab.com/adventure-guys/ag-dnd-hub/-/raw/main/module.json",
+        "compatibility": {}
+      },
+      {
+        "id": "cs-click-to-scene",
+        "type": "module",
+        "manifest": "https://github.com/cosmosaurs/click-to-scene/releases/latest/download/module.json"
+      },
+      {
+        "id": "laaru-dnd5-hw",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
+        "id": "ag-interactive-maps",
+        "type": "module",
+        "manifest": "https://gitlab.com/adventure-guys/interactive-maps/ag-interactive-maps/raw/main/module.json",
+        "compatibility": {}
+      }
+    ],
+    "requires": [
+      {
+        "id": "ru-ru",
+        "type": "module",
+        "compatibility": {}
+      }
+    ]
+  },
+  "packFolders": [
+    {
+      "name": "🏰 Вотердип: Драконий Куш",
+      "sorting": "m",
+      "color": "#03316d",
+      "packs": [
+        "adventure",
+        "macro"
+      ],
+      "folders": []
+    }
+  ],
+  "packs": [
+    {
+      "name": "adventure",
+      "label": "🏰 Вотердип: Драконий Куш",
+      "banner": "modules/ag-wdh/assets/arts/adventure-cover-blank.webp",
+      "path": "packs/adventure",
+      "type": "Adventure",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "macro",
+      "label": "Макросы",
+      "banner": "modules/ag-wdh/assets/arts/adventure-cover-blank.webp",
+      "path": "packs/macro",
+      "type": "Macro",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "media": [
+    {
+      "type": "setup",
+      "url": "modules/ag-wdh/assets/arts/adventure-cover-blank.webp",
+      "thumbnail": "modules/ag-wdh/assets/arts/adventure-cover-blank.webp",
+      "loop": false,
+      "flags": {}
+    }
+  ]
+}
